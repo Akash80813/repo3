@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Helper</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    form {
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input, select {
+      width: 100%;
+      padding: 5px;
+      margin-top: 5px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML Helper</h1>
+  <p>Type your HTML code below:</p>
+  <textarea id="htmlInput"></textarea>
+  <button onclick="renderHTML()">Render HTML</button>
+  <iframe id="htmlOutput"></iframe>
+
+  <script>
+    function renderHTML() {
+      var htmlInput = document.getElementById("htmlInput").value;
+      var htmlOutput = document.getElementById("htmlOutput").contentWindow.document;
+      htmlOutput.open();
+      htmlOutput.write(htmlInput);
+      htmlOutput.close();
+    }
+  </script>
+</body>
+</html>

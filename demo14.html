@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/all.css" rel="stylesheet" />
+    <style>
+        .h
+        {
+            min-height: 350px;
+            width: 600px;
+            box-shadow: 1px 1px 5px black,-1px -1px 10px white;
+
+        }
+        .a
+        {
+            min-height: 350px;
+            width: 300px;
+        }
+        .b
+        {
+            height: 30px;
+            width: 30px;
+            float: left;
+            border-radius: 50%;
+            box-shadow: 1px 1px 5px black,-1px -1px 8px white;
+            line-height: 30px;
+            margin: 5px 5px;
+        }
+        .row1
+        {
+            padding-left: 80px;
+            box-sizing: border-box;
+        }
+        .b1
+        {
+            width: 200px;
+            border-radius: 15px;
+            box-shadow: 1px 1px 5px black inset,-2px -2px 8px white inset;
+
+        }
+        .btn
+        {
+            border-radius: 20px;
+            box-shadow: 1px 1px 5px white,-2px -2px 8px black;
+            width: 100px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container h mt-4">
+        <div class="row">
+            <div class="col-6 bg-light a">
+                <h3 class="text-center pt-4">Sign In</h3>
+                <div class="row1 ">
+                 <i class="fa-brands fa-facebook-f b text-center"></i> 
+                 <i class="fa-brands fa-twitter b text-center"></i>       
+                 <i class="fa-brands fa-linkedin-in b text-center"></i> </div><br><br>
+                <p class="text-center">or use your account</p>
+                
+                <div class="input-group mb-3">
+                   
+                    <input type="email" class="form-control b1" placeholder="Email"> 
+                </div>
+                 
+                <div class="input-group ">
+                    
+                    <input type="password" class="form-control b1" placeholder="Password"> 
+                </div><br>
+                <center><input type="submit" value="SIGN IN" class="form-control btn" ></center>
+
+                </div>
+            <div class="col-6 bg-danger a pt-5">
+                <h3 class="text-center pt-5 text-light">Hello, Friend</h3>
+                <p class="ps-3 pt-3 text-light">Enter your personal details and<br>start journey with us</p>
+                <center class="pt-2"><input type="submit" value="SIGN IN" class="form-control btn text-light" ></center>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
